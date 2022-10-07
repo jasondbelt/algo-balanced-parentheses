@@ -10,6 +10,7 @@ If you have not we recommend creating free account with leetcode.
 
 **Once you are done be sure to check out other submitted solutions on leetcode and the problem discussion!**
 
+Also - **only once you are done** -- [check out the problem analysis here](https://redquark.org/leetcode/0020-valid-parentheses/)
 
 Below is the problem description from leetcode 
 
