@@ -4,7 +4,7 @@ For this assignment, we will do it on leetcode. This is both to help you get mor
 
 https://leetcode.com/problems/valid-parentheses/
 
-**You should complete the assignment in leetcode above, to get familiar with the platform.** That said, if it helps, don't be afraid to prototype code locally (on your own computer) in VS Code. 
+**You should complete the assignment in leetcode above, to get familiar with the platform.** That said, if it helps, don't be afraid to prototype code locally (on your own computer) in VS Code.
 
 If you have not we recommend creating free account with leetcode.
 
@@ -12,59 +12,55 @@ If you have not we recommend creating free account with leetcode.
 
 Also - **only once you are done** -- [check out the problem analysis here](https://redquark.org/leetcode/0020-valid-parentheses/)
 
-Below is the problem description from leetcode 
+Below is the problem description from leetcode
 
-----
+---
 
-Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
 
 An input string is valid if:
 
-Open brackets must be closed by the same type of brackets.
-Open brackets must be closed in the correct order.
-Every close bracket has a corresponding open bracket of the same type.
- 
+- Open brackets must be closed by the same type of brackets.
+
+- Open brackets must be closed in the correct order.
+
+- Every close bracket has a corresponding open bracket of the same type.
 
 Example 1:
+
 ```
 Input: s = "()"
 Output: true
 ```
 
 Example 2:
+
 ```
 Input: s = "()[]{}"
 Output: true
 ```
 
 Example 3:
+
 ```
 Input: s = "(]"
 Output: false
 ```
- 
 
 Constraints:
 
-1 <= s.length <= 104
-s consists of parentheses only '()[]{}'.
+1 <= s.length <= 10^4 s consists of parentheses only '()[]{}'.
 
-### Write an algorithm that takes in a string and returns a string with balanced parentheses only. The string will contain letters, numbers, and parentheses only.
+## Test Cases
 
 ```python
-balanceParens("()") # should return "()"
-balanceParens("a(b)c)") # should return "a(b)c"
-balanceParens("(a)(bdd)c)") # should return "(a)(bdd)c"
-balanceParens("a(dbvb)c)") # should return "a(dbvb)c"
-balanceParens("a(b)(c)())") # should return "a(b)(c)()"
-balanceParens(")(") # should return ""
-balanceParens("(((((") # should return ""
-balanceParens(")(())(") # should return "(())"
-balanceParens("(()()(") # should return "()()"
-balanceParens(")())(()()(") # should return "()()()"
-```
-
-### Challenge - Nested Parentheses
-```python
-balanceParens(")(())(")) # should return "(())"
+isValid("()") # should return true
+isValid("())") # should return false
+isValid("(){}") # should return true
+isValid("({})") # should return true
+isValid("(){}[])") # should return false
+isValid("][") # should return false
+isValid("(({}") # should return false
+isValid("}([]){") # should return false
+isValid("{[()]({})}()") # should return true
 ```
