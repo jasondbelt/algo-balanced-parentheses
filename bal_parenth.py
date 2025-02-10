@@ -7,6 +7,7 @@ def balanced_parentheses(str):
         elif str[char] == ')' or str[char] == '}' or str[char] == ']':
             counter -= 1
         # exit function and return False if counter < 0, meaning unbalanced chars    
+        # need to re-check on each iteration, so can't be an elif
         if counter < 0:
             return False
 
